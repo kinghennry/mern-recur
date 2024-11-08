@@ -20,7 +20,7 @@ export default function App() {
       <Toaster position='top-center' reverseOrder={false} />
       <Header />
       <Routes>
-        <Route exact path='/' element={<Home />} />
+        <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
         <Route path='/search' element={<Search />} />
         <Route path='*' element={<NotFound />} />
@@ -29,7 +29,6 @@ export default function App() {
         <Route path='/auth/sign-up' element={<SignUp />} />
         {/* loggedIn user cannot access this route */}
         <Route path='/create-post' element={<CreatePost />} />
-        {/* <Route path='/update-post/:postId' element={<CreatePost />} /> */}
         <Route path='/dashboard' element={<Dashboard />} />
         <Route path='/post/:postSlug' element={<PostPage />} />
       </Routes>
